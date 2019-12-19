@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidFormation</string>
     <string name="hello_jonathan">Hello Jonathan!</string>
+    <string name="polyconseil_logo">polyconseil logo</string>
 </resources>
