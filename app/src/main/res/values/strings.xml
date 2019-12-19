@@ -2,4 +2,6 @@
     <string name="app_name">AndroidFormation</string>
     <string name="hello_jonathan">Hello Jonathan!</string>
     <string name="polyconseil_logo">polyconseil logo</string>
+    <string name="click_me">click me</string>
+    <string name="input_hint">toast text</string>
 </resources>
