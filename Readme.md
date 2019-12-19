@@ -4,4 +4,4 @@
 - resources
 
 ## état actuel
-- une simple application avec hello world dessus.
+- une application avec hello un nom dessus, et en couleur.
