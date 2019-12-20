@@ -4,4 +4,5 @@
     <string name="polyconseil_logo">polyconseil logo</string>
     <string name="click_me">click me</string>
     <string name="input_hint">toast text</string>
+    <string name="should_not_happen">This string shouldn\'t be here, please contact polyconseil for further investigation</string>
 </resources>
