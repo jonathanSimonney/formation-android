@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText toastInput;
     private boolean shouldOpenNextActivity;
 
+    public static final String KEY_MUST_REDIRECT_ON_CLICK = "mustRedirectToNextClick";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         this.toastInput = findViewById(R.id.toastInput);
         this.shouldOpenNextActivity = false;
+        if (savedInstanceState != null){
+            this.shouldOpenNextActivity = savedInstanceState.getBoolean(KEY_MUST_REDIRECT_ON_CLICK);
+        }
     }
 
     public void click(View view) {
@@ -36,5 +41,12 @@ public class MainActivity extends AppCompatActivity {
     private void showToast(String toastContent) {
         Toast toast = Toast.makeText(getApplicationContext(), toastContent, Toast.LENGTH_LONG);
         toast.show();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putBoolean(KEY_MUST_REDIRECT_ON_CLICK, this.shouldOpenNextActivity);
     }
 }
