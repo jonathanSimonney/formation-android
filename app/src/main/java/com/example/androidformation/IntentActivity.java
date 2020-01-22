@@ -7,10 +7,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class IntentActivity extends AppCompatActivity {
-    public static void startActivity(Context context, String text){
+    public static final String KEY_INTENT_USER_INPUT_LIST = "listUserInput";
+
+    public static void startActivity(Context context, String text, ArrayList<String> userInputList){
         Intent intent = new Intent(context, IntentActivity.class);
         intent.putExtra(Intent.EXTRA_TEXT, text);
+        intent.putExtra(KEY_INTENT_USER_INPUT_LIST, userInputList);
         context.startActivity(intent);
     }
 
