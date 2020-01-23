@@ -12,12 +12,19 @@
         android:gravity="center"
         android:id="@+id/precedent_input_text"
         android:text="@string/should_not_happen"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-
         />
+
+    <!-- A RecyclerView with some commonly used attributes -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_list_view"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf=
+            "@+id/precedent_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
