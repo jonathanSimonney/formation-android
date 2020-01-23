@@ -19,12 +19,13 @@
         />
 
     <!-- A RecyclerView with some commonly used attributes -->
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_list_view"
         android:scrollbars="vertical"
         app:layout_constraintTop_toBottomOf=
             "@+id/precedent_input_text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
